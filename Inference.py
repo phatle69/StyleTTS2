@@ -15,7 +15,7 @@ with open("Configs/config.yml", "r") as f:
 
 # Load mô hình StyleTTS2
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model = StyleTTS2(config.model).to(device)
+model = DurationEncoder(config.model).to(device)
 model.load_state_dict(torch.load("styletts2.pth", map_location=device))
 model.eval()
 
