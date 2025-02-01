@@ -5,7 +5,7 @@ import numpy as np
 import yaml
 from munch import Munch
 from models import StyleEncoder  # Điều chỉnh nếu tên model khác
-from utils import TextCleaner
+from text_utils import TextCleaner
 
 # Khởi tạo text cleaner
 text_cleaner = TextCleaner()
