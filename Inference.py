@@ -10,7 +10,7 @@ from text_utils import TextCleaner
 # Khởi tạo text cleaner
 text_cleaner = TextCleaner()
 
-with open("config.yaml", "r") as f:
+with open("Configs/config.yml", "r") as f:
     config = Munch(yaml.safe_load(f))
 
 # Load mô hình StyleTTS2
