@@ -11,7 +11,7 @@ from text_utils import TextCleaner
 text_cleaner = TextCleaner()
 
 # Tải cấu hình
-with open("config.yaml", "r") as f:
+with open("Configs/config.yaml", "r") as f:
     config = Munch(yaml.safe_load(f))
 
 # Load mô hình StyleTTS2
