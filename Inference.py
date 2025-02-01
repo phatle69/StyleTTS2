@@ -4,7 +4,7 @@ import librosa
 import numpy as np
 import yaml
 from munch import Munch
-from models import StyleTTS2  # Điều chỉnh nếu tên model khác
+from models import StyleEncoder  # Điều chỉnh nếu tên model khác
 from utils import TextCleaner
 
 # Khởi tạo text cleaner
