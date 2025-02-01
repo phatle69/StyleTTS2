@@ -10,22 +10,7 @@ from text_utils import TextCleaner
 # Khởi tạo text cleaner
 text_cleaner = TextCleaner()
 
-import os
-import yaml
-from munch import Munch
-
-# Lấy đường dẫn tuyệt đối đến thư mục chứa script
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-# Ghép đường dẫn tuyệt đối đến file config.yaml
-config_path = os.path.join(BASE_DIR, "Configs", "config.yaml")
-
-# Kiểm tra file có tồn tại không
-if not os.path.exists(config_path):
-    raise FileNotFoundError(f"File không tồn tại: {config_path}")
-
-# Đọc file YAML
-with open(config_path, "r") as f:
+with open("config.yaml", "r") as f:
     config = Munch(yaml.safe_load(f))
 
 # Load mô hình StyleTTS2
